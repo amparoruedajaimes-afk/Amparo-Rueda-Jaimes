@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+</head>
+
+<body>
+    <header>
+        <img src="placeholder.jpg" alt="Logo del sitio" width="60" height="60">
+        <h1>Mi Sitio Web Semántico</h1>
+        <nav>
+            <ul>
+                <li><a href="../clase_2/my_first_page">Inicio</a></li>
+                <li><a href="../clase_3/menu_form.html">Demostración de Tablas</a></li>
+                <li><a href="#">Demostración de
+                        Formularios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contáctanos</h2>
+            <form action="/enviar-consulta" method="POST" novalidate>
+                <fieldset>
+                    <legend>Información Personal</legend>
+
+                    <p>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50"
+                            placeholder="Ingrese su nombre completo">
+                    </p>
+
+                    <p>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+                    </p>
+
+                    <p>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9,15}"
+                            placeholder="Número de teléfono (9-15 dígitos)">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalles de la consulta</legend>
+
+                    <p>
+                        <label for="tipo-consulta">Tipo de consulta:</label>
+                        <select id="tipo-consulta" name="tipo_consulta" required>
+                            <option value="">Seleccione un tipo</option>
+                            <option value="informacion">Solicitud de información</option>
+                            <option value="soporte">Soporte técnico</option>
+                            <option value="queja">Queja o reclamo</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required minlength="10" maxlength="500"
+                            placeholder="Escriba su mensaje (mínimo 10 caracteres)" rows="5"></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Términos y condiciones</legend>
+
+                    <p>
+                        <input type="checkbox" id="privacidad" name="privacidad" required>
+                        <label for="privacidad">He leído y acepto la política de privacidad</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Enviar consulta</button>
+                    <button type="reset">Limpiar formulario</button>
+                </p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+        <p>
+            <a href="#privacidad">Política de Privacidad</a> |
+            <a href="#terminos">Términos de Servicio</a>
+        </p>
+    </footer>
+</body>
+
+</html>

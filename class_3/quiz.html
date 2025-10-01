@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación de Conocimientos PHP/Laravel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="text-center">
+        <h1>Evaluación de Conocimientos PHP/Laravel</h1>
+        <p class="lead">Cuestionario para validar conocimientos en PHP y la estructura arquitectónica de Laravel</p>
+    </header>
+
+    <main class="container">
+        <form id="quizForm">
+            <!-- Preguntas sobre PHP -->
+            <section>
+                <h2 class="mb-4">Parte 1: Conocimientos de PHP</h2>
+                
+                <article class="card">
+                    <header class="card-header">Pregunta 1</header>
+                    <section class="card-body">
+                        <h3 class="card-title">¿Qué son los traits en PHP y para qué se utilizan?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1a" value="a">
+                            <label class="form-check-label" for="q1a">Son clases abstractas que no se pueden instanciar</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1b" value="b">
+                            <label class="form-check-label" for="q1b">Son mecanismos de herencia múltiple para reutilizar código</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1c" value="c">
+                            <label class="form-check-label" for="q1c">Son interfaces que definen métodos obligatorios</label>
+                        </div>
+                    </section>
+                </article>
+
+                <article class="card">
+                    <header class="card-header">Pregunta 2</header>
+                    <section class="card-body">
+                        <h3 class="card-title">¿Qué diferencia hay entre == y === en PHP?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2a" value="a">
+                            <label class="form-check-label" for="q2a">== compara valores y === compara valores y tipos</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2b" value="b">
+                            <label class="form-check-label" for="q2b">== compara tipos y === compara valores</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2c" value="c">
+                            <label class="form-check-label" for="q2c">No hay diferencia, son sinónimos</label>
+                        </div>
+                    </section>
+                </article>
+
+                <article class="card">
+                    <header class="card-header">Pregunta 3</header>
+                    <section class="card-body">
+                        <h3 class="card-title">¿Qué son las sesiones en PHP y cómo se gestionan?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" id="q3a" value="a">
+                            <label class="form-check-label" for="q3a">Son variables globales accesibles desde cualquier script</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" id="q3b" value="b">
+                            <label class="form-check-label" for="q3b">Son mecanismos para almacenar información del usuario entre peticiones</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" id="q3c" value="c">
+                            <label class="form-check-label" for="q3c">Son métodos para conectarse a bases de datos</label>
+                        </div>
+                    </section>
+                </article>
+            </section>
+
+            <!-- Preguntas sobre Laravel -->
+            <section>
+                <h2 class="my-4">Parte 2: Conocimientos de Laravel</h2>
+                
+                <article class="card">
+                    <header class="card-header">Pregunta 4</header>
+                    <section class="card-body">
+                        <h3 class="card-title">¿Qué es el Service Container en Laravel?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q4" id="q4a" value="a">
+                            <label class="form-check-label" for="q4a">Es un contenedor de servicios externos como AWS o Mailchimp</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q4" id="q4b" value="b">
+                            <label class="form-check-label" for="q4b">Es una herramienta para gestionar dependencias de clases e inyección</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q4" id="q4c" value="c">
+                            <label class="form-check-label" for="q4c">Es un paquete para contener múltiples aplicaciones Laravel</label>
+                        </div>
+                    </section>
+                </article>
+
+                <article class="card">
+                    <header class="card-header">Pregunta 5</header>
+                    <section class="card-body">
+                        <h3 class="card-title">¿Qué son los Middlewares en Laravel?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q5" id="q5a" value="a">
+                            <label class="form-check-label" for="q5a">Son clases intermedias que filtran peticiones HTTP</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q5" id="q5b" value="b">
+                            <label class="form-check-label" for="q5b">Son componentes de la base de datos</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q5" id="q5c" value="c">
+                            <label class="form-check-label" for="q5c">Son herramientas para el frontend</label>
+                        </div>
+                    </section>
+                </article>
+
+                <article class="card">
+                    <header class="card-header">Pregunta 6</header>
+                    <section class="card-body">
+                        <h3 class="card-title">¿Qué ventajas ofrece Eloquent ORM sobre una consulta SQL tradicional?</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q6" id="q6a" value="a">
+                            <label class="form-check-label" for="q6a">Mayor seguridad contra inyecciones SQL y sintaxis más intuitiva</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q6" id="q6b" value="b">
+                            <label class="form-check-label" for="q6b">Permite ejecutar consultas más rápidas</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q6" id="q6c" value="c">
+                            <label class="form-check-label" for="q6c">No ofrece ventajas significativas</label>
+                        </div>
+                    </section>
+                </article>
+            </section>
+
+            <section class="text-center">
+                <button type="button" class="btn btn-submit" onclick="calculateScore()">Evaluar Respuestas</button>
+            </section>
+        </form>
+
+        <section class="result-container" id="resultContainer">
+            <h3 class="text-center">Resultados de la Evaluación</h3>
+            <p class="text-center score-display" id="scoreDisplay"></p>
+            <section class="mt-4" id="feedback"></section>
+        </section>
+    </main>
+
+    <footer>
+        <p>Cuestionario diseñado para evaluar conocimientos en PHP y Laravel</p>
+    </footer>
+
+    <script>
+        function calculateScore() {
+            // Respuestas correctas
+            const correctAnswers = {
+                q1: 'b',
+                q2: 'a',
+                q3: 'b',
+                q4: 'b',
+                q5: 'a',
+                q6: 'a'
+            };
+            
+            let score = 0;
+            let totalQuestions = Object.keys(correctAnswers).length;
+            
+            // Calcular puntuación
+            for (let i = 1; i <= totalQuestions; i++) {
+                const selected = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selected && selected.value === correctAnswers[`q${i}`]) {
+                    score++;
+                }
+            }
+            
+            // Mostrar resultados
+            const scoreDisplay = document.getElementById('scoreDisplay');
+            const feedback = document.getElementById('feedback');
+            const resultContainer = document.getElementById('resultContainer');
+            
+            scoreDisplay.textContent = `Puntuación: ${score} / ${totalQuestions}`;
+            
+            // Generar retroalimentación
+            let feedbackHTML = '<h5>Retroalimentación:</h5><ul class="list-group">';
+            
+            if (score >= 5) {
+                feedbackHTML += '<li class="list-group-item list-group-item-success">Excelente conocimiento de PHP y Laravel</li>';
+            } else if (score >= 3) {
+                feedbackHTML += '<li class="list-group-item list-group-item-warning">Conocimiento medio, necesita reforzar algunos conceptos</li>';
+            } else {
+                feedbackHTML += '<li class="list-group-item list-group-item-danger">Conocimiento básico, necesita estudiar más los fundamentos</li>';
+            }
+            
+            feedbackHTML += '<li class="list-group-item">Respuestas correctas: Traits (herencia múltiple), == vs === (valores vs valores/tipos), Sesiones (almacenar información entre peticiones), Service Container (gestión de dependencias), Middlewares (filtro peticiones HTTP), Eloquent ORM (seguridad y sintaxis intuitiva)</li>';
+            feedbackHTML += '</ul>';
+            
+            feedback.innerHTML = feedbackHTML;
+            resultContainer.style.display = 'block';
+            
+            // Desplazarse a los resultados
+            resultContainer.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

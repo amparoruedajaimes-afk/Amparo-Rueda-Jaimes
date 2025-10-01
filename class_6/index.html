@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link rel="stylesheet" href="css/styles.css" >
+  <title>Digital Lybrary - Layouts Workshops</title>
+
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="img/logo.svg" alt="Logo Biblioteca" class="logo" >
+        <h1>Biblioteca Digital</h1>
+      </div>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Catálogo</a></li>
+          <li><a href="#">Categorías</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main container">
+    <aside class="filters" aria-labelledby="filtros-title">
+      <h2 id="filtros-title">Filtros</h2>
+
+      <section class="filter-group">
+        <h3>Categorías</h3>
+        <ul>
+          <li><a href="#">Ficción</a></li>
+          <li><a href="#">Ciencia</a></li>
+          <li><a href="#">Historia</a></li>
+          <li><a href="#">Infantil</a></li>
+        </ul>
+      </section>
+
+      <section class="filter-group">
+        <h3>Ordenar por</h3>
+        <ul>
+          <li><a href="#">Más recientes</a></li>
+          <li><a href="#">Más populares</a></li>
+          <li><a href="#">Alfabético</a></li>
+        </ul>
+      </section>
+    </aside>
+
+    <section class="catalog" aria-label="Catálogo de libros">
+      <h2 class="catalog-title">Catálogo de libros</h2>
+
+      <div class="books-grid">
+        <!-- Ejemplo de tarjeta de libro -->
+        <article class="book-card">
+          <img src="img/cienAnos.jpg" alt="Cien años de soledad" >
+          <h3>Cien años de soledad</h3>
+          <p class="author">Gabriel García Marquez</p>
+          <p class="excerpt">Nunca dejaré de recomendar Cien años de soledad, obra maestra de García Márquez que retrata
+            Macondo, los Buendía y la esencia colombiana.</p>
+        </article>
+
+        <!-- Repetir tarjetas para mostrar múltiples libros -->
+        <article class="book-card">
+          <img src="img/cronicas.jpg" alt="Crónicas marcianas" >
+          <h3>'Crónicas marcianas' (1950) </h3>
+          <p class="author">Ray Bradbury</p>
+          <p class="excerpt">Esta colección de relatos, tras Fahrenheit 451, es obra maestra de Bradbury: Marte
+            colonizado refleja deseos, errores y ambiciones humanas.</p>
+        </article>
+
+        <article class="book-card">
+          <img src="img/hammer.jpg" alt="Hamnet" >
+          <h3>'Hamnet' (2021) </h3>
+          <p class="author">Magie O'Farrell</p>
+          <p class="excerpt">O'Farrell crea en Hamnet una novela conmovedora sobre Agnes, esposa de Shakespeare,
+            explorando amor, duelo, familia y sentido existencial profundo.</p>
+        </article>
+
+        <article class="book-card">
+          <img src="img/laberinto.jpg" alt="El laberinto español" >
+          <h3>Título del Libro 4</h3>
+          <p class="author">Geral Brenan</p>
+          <p class="excerpt">Aprendí sobre España en Bristol, leyendo hispanistas brillantes y El laberinto español,
+            obra esencial para comprender la Guerra Civil.</p>
+        </article>
+
+        <article class="book-card">
+          <img src="img/nada.jpg" alt="Nada" >
+          <h3>Nada</h3>
+          <p class="author">Carmen Laforet</p>
+          <p class="excerpt">Esta novela existencialista narra la llegada de Andrea a Barcelona, mostrando desengaños,
+            roles impuestos y un retrato crítico de la posguerra.</p>
+        </article>
+        <article class="book-card">
+          <img src="img/voces.jpg" alt="Nada" >
+          <h3>Título del Libro 2</h3>
+          <p class="author">Autor 2</p>
+          <p class="excerpt">Descripción breve del libro 2.</p>
+        </article>
+
+        <article class="book-card">
+          <img src="img/red.jpg" alt="Cubierta Libro 3" >
+          <h3>Título del Libro 3</h3>
+          <p class="author">Autor 3</p>
+          <p class="excerpt">Descripción breve del libro 3.</p>
+        </article>
+
+        <article class="book-card">
+          <img src="img/stefania.jpeg" alt="Cubierta Libro 4" >
+          <h3>Título del Libro 4</h3>
+          <p class="author">Autor 4</p>
+          <p class="excerpt">Descripción breve del libro 4.</p>
+        </article>
+        <article class="book-card">
+          <img src="img/venecia.jpg" alt="Cubierta Libro 4" >
+          <h3>Título del Libro 4</h3>
+          <p class="author">Autor 4</p>
+          <p class="excerpt">Descripción breve del libro 4.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Biblioteca Digital</p>
+      <p class="small">Diseñado para el Taller de CSS Layouts — Flexbox & Grid</p>
+    </div>
+  </footer>
+</body>
+
+</html>

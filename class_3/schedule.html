@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablas</title>
+</head>
+<body>
+
+  <table border="1">
+    <caption>Horario</caption>
+
+    <thead>
+      <tr>
+        <th id="dia">Día</th>
+        <th>Clase</th>
+        <th>Hora</th>
+        <th>Profesor</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td headers="dia">Lunes</td>
+        <td>Matemáticas</td>
+        <td>10am</td>
+        <td>Profe. Ramírez</td>
+      </tr>
+      <tr>
+        <td>Martes</td>
+        <td>Deporte</td>
+        <td>2pm</td>
+        <td>Profe. López</td>
+      </tr>
+
+      <!-- Mismo profesor dicta dos materias seguidas -->
+      <tr>
+        <td>Miércoles</td>
+        <td>Física</td>
+        <td>3pm</td>
+        <td rowspan="2">Profe. García</td>
+      </tr>
+      <tr>
+        <td>Miércoles</td>
+        <td>Química</td>
+        <td>4pm</td>
+      </tr>
+
+      <tr>
+        <td>Viernes</td>
+        <td>Lectura</td>
+        <td>5pm</td>
+        <td>Profe. Méndez</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="4">Este es mi horario</td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>
+

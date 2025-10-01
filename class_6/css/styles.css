@@ -1,0 +1,275 @@
+:root {
+    --bg: #FBFBFD;
+    --card-bg: #FFF9F7;
+    --muted: #9AA3A8;
+    --accent-1: #FFD8D0;
+    /* pastel rosa salmón */
+    --accent-2: #D7F5E3;
+    /* pastel menta */
+    --accent-3: #EDE7FF;
+    /* pastel lavanda */
+    --accent-4: #FFF2D6;
+    /* pastel crema */
+    --text: #24333A;
+    --radius: 10px;
+    --gap: 1.25rem;
+    --container-max: 1100px;
+    --shadow: 0 6px 18px rgba(36, 51, 58, 0.06);
+    --focus: 3px solid rgba(100, 150, 255, 0.18);
+    font-size: 16px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: var(--bg);
+    background-color: rgb(230, 222, 190);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Contenedor centrado */
+.container {
+    width: calc(100% - 2rem);
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Header  */
+.site-header {
+    background: linear-gradient(90deg, var(--accent-2), var(--accent-3));
+    padding: 0.75rem 0;
+    box-shadow: var(--shadow);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    background: white;
+    border-radius: 8px;
+    padding: 6px;
+    object-fit: contain;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.brand h1 {
+    font-size: 1.125rem;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+/* Navegación — Flexbox */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    text-decoration: none;
+    padding: .4rem .7rem;
+    border-radius: 8px;
+    color: var(--text);
+    font-weight: 600;
+    background: transparent;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    background: rgba(255, 255, 255, 0.22);
+    outline: none;
+}
+
+/*  Main layout — Grid */
+.site-main {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    /* sidebar + contenido */
+    gap: var(--gap);
+    align-items: start;
+    padding: 1.25rem 0;
+}
+
+/* Sidebar filtros */
+.filters {
+    background: linear-gradient(180deg, var(--card-bg), #FFFFFF);
+    padding: 1rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    min-height: 240px;
+}
+
+.filters h2 {
+    margin-top: 0;
+    font-size: 1.05rem;
+}
+
+.filter-group {
+    margin-top: 0.9rem;
+}
+
+.filter-group h3 {
+    margin: 0 0 .4rem 0;
+    font-size: .95rem;
+    color: var(--text);
+}
+
+.filter-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+}
+
+.filter-group a {
+    text-decoration: none;
+    color: var(--muted);
+    padding: .25rem .5rem;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.filter-group a:hover {
+    color: var(--text);
+    background: rgba(0, 0, 0, 0.03);
+}
+
+/* Catalogo */
+.catalog .catalog-title {
+    margin: 0 0 0.8rem 0;
+    font-size: 1.1rem;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+/* Tarjetas de libro */
+.book-card {
+    background: linear-gradient(180deg, var(--accent-4), var(--card-bg));
+    padding: .9rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.book-card img {
+    border-radius: 8px;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    background: linear-gradient(135deg, var(--accent-1), var(--accent-3));
+}
+
+.book-card h3 {
+    margin: .2rem 0 0;
+    font-size: 1rem;
+}
+
+.book-card .author {
+    margin: 0;
+    color: var(--muted);
+    font-size: .9rem;
+}
+
+.book-card .excerpt {
+    margin: .45rem 0 0;
+    font-size: .9rem;
+    color: #4b5a5f;
+    flex: 1;
+}
+
+/* Hover sutil */
+.book-card:hover {
+    transform: translateY(-6px);
+}
+
+/* --------------------------
+   Footer
+   -------------------------- */
+.site-footer {
+    margin-top: 1.5rem;
+    padding: 1rem 0;
+    background: transparent;
+    color: var(--muted);
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.small {
+    font-size: .85rem;
+}
+
+/* --------------------------
+   Responsive: móviles y tablet
+   -------------------------- */
+@media (max-width: 900px) {
+    .site-main {
+        grid-template-columns: 1fr;
+        /* sidebar debajo o arriba */
+    }
+
+    /* ordenar: mostrar filtros arriba de catálogo en pantallas pequeñas */
+    .filters {
+        order: -1;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .6rem;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+    }
+}
+
+/* Accesibilidad: focus visible */
+a:focus {
+    outline: none;
+    box-shadow: var(--focus);
+    border-radius: 8px;
+}
