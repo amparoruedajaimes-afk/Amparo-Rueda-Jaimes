@@ -1,0 +1,114 @@
+
+:root {
+  --pastel-blue: hwb(209 52% 2%);
+  --pastel-green: #bde0fe;
+  --pastel-pink: #ffafcc;
+  --pastel-purple: #cdb4db;
+  --pastel-yellow: #ffc8dd;
+  --pastel-cream: #ffddd2;
+  --text-dark: #333;
+  --text-light: #555;
+  --white: #fff;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--pastel-cream);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+
+header {
+  background-color: var(--pastel-blue);
+  color: var(--text-dark);
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+
+main {
+  padding: 0 1rem 2rem;
+}
+
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.user-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.user-card h2 {
+  color: var(--pastel-purple);
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.user-card p {
+  margin: 0.5rem 0;
+  color: var(--text-light);
+}
+
+.user-card .email {
+  color: var(--pastel-pink);
+  font-weight: 600;
+}
+
+.user-card .city {
+  color: var(--pastel-green);
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  background-color: var(--pastel-blue);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: var(--text-dark);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .users-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}
